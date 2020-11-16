@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my app</title>
+</head>
+<body>
+    <h1>just an API app</h1>
+
+    <form action="/update/<%=found._id%>?_method=PUT" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <label for="">enter your name</label>
+        <label for="nickname"><input type="text" id="nickname" name="nickname" value="<%= found.nickname %> ">
+        <label for="">tell somthig about you</label>
+        <label for="description"><input type="text" id="description" name="description" value="<%= found.description%> "> 
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
